@@ -1,0 +1,261 @@
+#header-big-user {
+  width: 100%;
+  display: none;
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (max-width: 711px) {
+    display: block;
+  }
+}
+
+.mobile-nv {
+  display: flex;
+  flex-direction: row;
+  margin: 2%;
+  margin-bottom: 0;
+
+  .notifications-mobile {
+    width: 30px;
+    height: 30px;
+    margin-right: 6px;
+  }
+
+  .profile-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+  }
+}
+.nav-body {
+  height: 100vh;
+}
+
+.mobile-logo {
+  width: 90px;
+  height: 40px;
+}
+
+.lower {
+  margin-top: 70%;
+  bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(248, 248, 248);
+}
+
+.nav_bar {
+  position: relative;
+
+  .nav_container {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5.5rem;
+    background: #bd0b0b;
+
+    .logo {
+      width: 105px;
+      height: 44px;
+    }
+
+    .nav_menu {
+      display: none;
+      align-items: center;
+      gap: 3rem;
+      background-color: #FFFEE0;
+      padding: .5%;
+      height: 40px;
+      border-radius: 28px;
+
+      .nav_link {
+        color: #000000;
+        font-weight: 600;
+        font-size: 18px;
+
+        &:hover {
+          color: rgb(114, 4, 4);
+        }
+      }
+
+      @media screen and (min-width: 1084px) {
+        display: flex;
+      }
+    }
+
+    .nav_cta {
+      display: none;
+      align-items: center;
+      gap: 1rem;
+
+      button {
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        gap: 8px;
+        border: none;
+      }
+
+      .signup {
+        background-color: #def701;
+        color: rgb(11, 11, 11);
+        padding: 0.8rem 3rem;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+
+      @media screen and (min-width: 1084px) {
+        display: flex;
+      }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 900px) {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+
+    @media screen and (max-width: 1084px) {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      // position: fixed;
+      z-index: 2;
+      box-shadow: 0px 64px 96px 0px #1819450d;
+    }
+  }
+}
+
+// Mobile Menu styling
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  .icon_bar {
+    width: 1.8rem;
+    height: 0.2rem;
+    background-color: #f8f4f4;
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 12rem;
+  }
+
+  .icon_bar_two {
+    margin-left: 0.5rem;
+  }
+
+  .icon_bar_two_active {
+    opacity: 0;
+    margin-top: 0;
+  }
+
+  .icon_bar_two_inactive {
+    opacity: 1;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .icon_times_one {
+    transform: translateY(0.15rem);
+    transform: rotate(45deg);
+  }
+
+  .icon_times_two {
+    transform: translateY(0.15rem);
+    transform: rotate(-45deg);
+  }
+
+  @media screen and (min-width: 1084px) {
+    display: none;
+  }
+}
+
+.nav_modal {
+  background: #bd0b0b;
+  width: 100%;
+  height: 380px;
+  display: block;
+  position: absolute;
+  transition-duration: 11s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  top: 4.5rem;
+  left: 0;
+  z-index: 10;
+
+  .nav_container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: flex-start;
+    padding: 1.8rem 2rem;
+
+    .nav_menu {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      // gap: 1rem;
+      background-color: #bd0b0b;
+
+      .nav_link {
+        color: #fdf9f9;
+        font-weight: 600;
+        font-size: 18px;
+
+        &:hover {
+          color: #bcb1b1;
+        }
+      }
+    }
+
+    .nav_cta {
+      display: flex;
+      flex-direction: column;
+      // align-items: center;
+      gap: 1rem;
+      margin-top: 10%;
+
+      button {
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        gap: 8px;
+        width: 250px;
+      }
+
+      .signup {
+        background-color: #fedd0a;
+        color: rgb(7, 7, 7);
+        padding: 0.8rem 3rem;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+
+      .signin {
+        background-color: transparent;
+        color: #060606;
+        border: 1px solid #003399;
+        padding: 0.8rem 1.5rem;
+
+        &:hover {
+          background-color: #003399;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1084px) {
+    display: none;
+  }
+}
