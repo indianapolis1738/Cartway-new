@@ -21,8 +21,8 @@ const HeroSec = () => {
             <strong style={{ color: "yellow" }}>#WeAreSomewhereNearby</strong>
           </p>
           <div className="btns">
-            <button> GooglePlay</button>
-            <button>AppStore</button>
+            <button> Google Play</button>
+            <button>App Store</button>
           </div>
         </div>
 

@@ -13,7 +13,7 @@ const DeliveryLayout = () => {
   return (
     <div>
       <div className="links">
-        <NavLink end>Local Delivery</NavLink>
+        <NavLink to='/' end>Local Delivery</NavLink>
         <NavLink to="interstate">Interstate</NavLink>
       </div>
       <div className="outlet">

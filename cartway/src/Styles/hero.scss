@@ -1,103 +1,108 @@
-.hero_section{
-    height: max-content;
-    width: 100%;
-    background: #bd0b0b;
-    background-image: url(../assets/Intersect.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+.hero_section {
+  height: max-content;
+  width: auto;
+  background: #bd0b0b;
+  background-image: url(../assets/Intersect.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1rem 5.5rem;
 
-    .hero_text{
+  .hero_text {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+
+    .plane_one {
+      align-items: baseline;
+      height: 40%;
+      margin-top: 15%;
+      width: 15%;
+    }
+    .plane_two {
+      align-items: baseline;
+      height: 40%;
+      width: 15%;
+    }
+    .text {
+      color: whitesmoke;
+      text-align: center;
+      gap: 0;
+      margin: 0;
+      width: 70%;
+      .pro_hero {
+        font-size: 70px;
+        margin-block: 0;
+        font-weight: 200;
+      }
+      .yellow_pro {
+        font-size: 48px;
+        margin-block: 0;
+      }
+      .delivery_text {
+        font-size: 20px;
+      }
+      .btns {
         display: flex;
+        gap: 15px;
         justify-content: center;
-        height: 100%;
-
-        .plane_one{
-            align-items: baseline;
-            height: 40%;
-            margin-top: 15%;
-            width: 15%;
-            animation: ease-in 2s all;
+        button {
+          background-color: #ffd633;
+          height: 3rem;
+          width: 9rem;
+          font-weight: 700;
+          font-size: 18px;
+          border: none;
+          border-radius: 10px;
         }
-        .plane_two{
-            align-items: baseline;
-            height: 40%;
-            width: 15%;
-        }
-        .text{
-            color: whitesmoke;
-            text-align: center;
-            gap: 0;
-            margin: 0;
-            width: 60%;
-            .pro_hero{
-                font-size: 70px;
-                margin-block: 0;
-                // margin: 0;
-            }
-            .yellow_pro{
-                font-size: 48px;
-            }
-            .delivery_text{
-                font-size: 20px;
-            }
-            .btns{
-                display: flex;
-                gap: 15px;
-                justify-content: center;
-                button{
-                    background-color: #FFD633;
-                    height: 3rem;
-                    width: 9rem;
-                    font-weight: 700;
-                    font-size: 20px;
-                    border: none;
-                    border-radius: 10px;
-                }
-            }
-        }
+      }
     }
+    margin-bottom: 1%;
+  }
 
-    @media screen and (max-width: 785px) {
-        .hero_text{
-             .text{
-                width: 100%;
-                .pro_hero{
-                    font-size: 60px;
-                    margin-block: 0;
-                    // margin: 0;
-                }
-                .yellow_pro{
-                    font-size: 38px;
-                }
-                .delivery_text{
-                    font-size: 15px;
-                }
-             }
+  @media screen and (max-width: 785px) {
+    .hero_text {
+      .text {
+        width: 100%;
+        .pro_hero {
+          font-size: 60px;
+          margin-block: 0;
+          // margin: 0;
         }
+        .yellow_pro {
+          font-size: 38px;
+        }
+        .delivery_text {
+          font-size: 15px;
+        }
+      }
     }
+  }
 
-    @media screen and (max-width: 635px) {
-        .hero_text{
-             .text{
-                width: 100%;
-                .pro_hero{
-                    font-size: 50px;
-                    margin-block: 0;
-                    // margin: 0;
-                }
-                .yellow_pro{
-                    font-size: 30px;
-                }
-                .delivery_text{
-                    font-size: 15px;
-                }
-             }
-             .plane_one{
-               display: none;
-            }
-            .plane_two{
-               display: none;
-            }
+  @media screen and (max-width: 635px) {
+    .hero_text {
+      .text {
+        width: 100%;
+        .pro_hero {
+          font-size: 50px;
+          margin-block: 0;
+          // margin: 0;
         }
+        .yellow_pro {
+          font-size: 30px;
+        }
+        .delivery_text {
+          font-size: 15px;
+        }
+      }
+      .plane_one {
+        display: none;
+      }
+      .plane_two {
+        display: none;
+      }
     }
+  }
+  @media screen and (max-width: 515px) {
+    padding: 0;
+  }
 }

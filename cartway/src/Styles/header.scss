@@ -47,6 +47,9 @@ a {
 
 .nav_bar {
   position: relative;
+  width: 100%;
+    background: #bd0b0b;
+    padding-top: 2%s;
 
   .nav_container {
     width: auto;
@@ -54,7 +57,12 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5.5rem;
-    background: #bd0b0b;
+
+    @media screen and (min-width: 1100px) {
+      max-width: 1165px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
     .logo {
       width: 105px;
@@ -64,9 +72,12 @@ a {
     .nav_menu {
       display: none;
       align-items: center;
-      gap: 3rem;
-      background-color: #FFFEE0;
-      padding: .5%;
+      gap: 2rem;
+      background-color: #fffee0;
+      padding: 0.9%;
+      padding-left: 5%;
+      padding-right: 5%;
+      align-items: center;
       height: 40px;
       border-radius: 28px;
 
@@ -83,6 +94,8 @@ a {
       @media screen and (min-width: 1084px) {
         display: flex;
       }
+
+      
     }
 
     .nav_cta {
@@ -99,10 +112,12 @@ a {
         border: none;
       }
 
-      .signup {
-        background-color: #def701;
+      .signup_btn {
+        background-color: #FFD633;
         color: rgb(11, 11, 11);
         padding: 0.8rem 3rem;
+        font-size: 18px;
+        font-weight: 700;
 
         &:hover {
           opacity: 0.8;

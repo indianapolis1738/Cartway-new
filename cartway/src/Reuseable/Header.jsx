@@ -16,7 +16,7 @@ const Header = () => {
       <div className="nav_bar">
         <div className="nav_container">
           <NavLink to="/" >
-            <img src={logo} className="logo" alt="Kript-logo" />
+            <img src={logo} className="logo" alt="Cartway-logo" />
           </NavLink>
 
           <MobileMenuIcon active={active} handleToggle={handleToggle} />
@@ -36,8 +36,8 @@ const Header = () => {
           </div>
 
           <div className="nav_cta">
-            <Link to="https://app.kript.africa/signup">
-              <button className="signup"> Ship Now !</button>
+            <Link to="/sign-in">
+              <button className="signup_btn"> Sign In</button>
             </Link>
           </div>
         </div>
@@ -83,8 +83,8 @@ const MobileNavbarModal = ({ handleToggle }) => {
         </div>
 <br />
         <div className="nav_cta">
-          <Link to="https://app.kript.africa/signup" onClick={handleToggle}>
-            <button className="signup">Ship Now !</button>
+          <Link to="/sign-in" onClick={handleToggle}>
+            <button className="signup_btn">Sign In</button>
           </Link>
         </div>
       </div>

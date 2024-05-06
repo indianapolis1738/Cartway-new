@@ -3,6 +3,8 @@ import Applayout from "./Layout/Applayout";
 import Homepage from "./Screens/Homepage";
 import Delivery from "./Reuseable/Delivery";
 import InterState from "./Reuseable/InterState";
+import SignIn from "./Screens/SignIn";
+import SignUp from "./Screens/SignUp";
 
 const Router = createBrowserRouter([
   {
@@ -24,6 +26,14 @@ const Router = createBrowserRouter([
       },
     ],
   },
+  {
+    path: 'sign-in',
+    element: <SignIn/>,
+  },
+  {
+    path: 'sign-up',
+    element: <SignUp/>
+  }
 ]);
 
 function App() {
