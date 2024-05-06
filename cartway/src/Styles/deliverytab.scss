@@ -23,7 +23,7 @@
     margin-right: auto;
   }
   @media screen and (max-width: 515px) {
-    padding: 0;
+    padding: 1%;
   }
 }
 .outlet {
@@ -60,9 +60,10 @@
       height: 3rem;
       width: 9rem;
       font-weight: 700;
-      font-size: 20px;
+      font-size: 18px;
       border: none;
       border-radius: 10px;
+      color: black;
     }
   }
   .two {
@@ -135,9 +136,10 @@
     margin-left: auto;
     margin-right: auto;
     padding: 0%;
+
   }
   @media screen and (max-width: 515px) {
-    padding: 0;
+    padding: 1%;
   }
 }
 
@@ -236,7 +238,7 @@
     }
   }
   @media screen and (max-width: 515px) {
-    padding: 0;
+    padding: 1%;
   }
 }
 
@@ -261,6 +263,7 @@
     button {
       height: 3rem;
       width: 9rem;
+      max-width: fit-content;
       border-radius: 1rem;
       background-color: #ffd633;
       border: none;
@@ -352,7 +355,7 @@
     margin-right: auto;
   }
   @media screen and (max-width: 515px) {
-    padding: 0;
+    padding: 1%;
   }
 }
 
@@ -462,7 +465,7 @@
     margin-right: auto;
   }
   @media screen and (max-width: 515px) {
-    padding: 0;
+    padding: 1%;
   }
 }
 
